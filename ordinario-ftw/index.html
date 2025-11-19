@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Ploceus26 - Arquitectura</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <script src="js/script.js" defer></script>
+</head>
+<body>
+  <header role="banner" class="header-principal">
+    <h1 class="logo-container">
+      <img src="img/logo.png" alt="Logo de Ploceus26 Arquitectura" width="300">
+    </h1>
+    <nav role="navigation" aria-label="Navegación principal">
+      <ul class="menu-principal">
+        <li>
+          <a href="#seccion-nosotros"
+             id="btn-nosotros"
+             class="btn-nav"
+             aria-current="page"
+             aria-controls="seccion-nosotros">
+            Acerca de Nosotros
+          </a>
+        </li>
+        <li>
+          <a href="#seccion-proyectos"
+             id="btn-proyectos"
+             class="btn-nav"
+             aria-controls="seccion-proyectos">
+            Proyectos Destacados
+          </a>
+        </li>
+        <li>
+          <a href="#seccion-cita"
+             id="btn-cita"
+             class="btn-nav"
+             aria-controls="seccion-cita">
+            Agendar Cita
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="contenido-principal" role="main" aria-live="polite">
+    <section id="seccion-nosotros"
+             class="seccion-contenido visible"
+             aria-labelledby="titulo-nosotros"
+             aria-hidden="false">
+      <h2 id="titulo-nosotros" tabindex="-1">Acerca de Nosotros</h2>
+      <div class="contenido-nosotros">
+        <article aria-labelledby="filosofia-titulo">
+          <h3 id="filosofia-titulo">Nuestra Filosofía</h3>
+          <p>En Ploceus26, creamos arquitectura que respeta el entorno y mejora la experiencia humana. Cada proyecto es una oportunidad para innovar y crear espacios funcionales y estéticamente inspiradores.</p>
+        </article>
+        <article aria-labelledby="equipo-titulo">
+          <h3 id="equipo-titulo">Nuestro Equipo</h3>
+          <p>Contamos con profesionales apasionados por la arquitectura sustentable y el diseño minimalista, siempre en busca de soluciones innovadoras para nuestros clientes.</p>
+          <p>Nuestros arquitectos combinan creatividad con funcionalidad para ofrecer soluciones que satisfacen las necesidades únicas de cada cliente.</p>
+        </article>
+        <article aria-labelledby="mision-titulo">
+          <h3 id="mision-titulo">Nuestra Misión</h3>
+          <p>Transformar ideas en espacios arquitectónicos excepcionales que inspiren y perduren en el tiempo, respetando siempre el medio ambiente y las necesidades humanas.</p>
+          <p>Nos comprometemos a crear diseños sostenibles que optimicen los recursos y generen bienestar para quienes habitan nuestros espacios.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="seccion-proyectos"
+             class="seccion-contenido"
+             aria-labelledby="titulo-proyectos"
+             aria-hidden="true">
+      <h2 id="titulo-proyectos" tabindex="-1">Proyectos Destacados</h2>
+      <div class="galeria-proyectos">
+        <article class="proyecto" aria-labelledby="cocina-titulo">
+          <h3 id="cocina-titulo">Remodelación de cocina</h3>
+          <div class="proyecto-imagen">
+            <img src="img/RemodelacionCocina.jpg"
+                 alt="Hermosa cocina residencial moderna en tonos blancos y madera con isla central"
+                 width="100%" height="auto">
+          </div>
+          <p>Hermosa cocina residencial, donde la elegancia se encuentra con la funcionalidad.</p>
+        </article>
+        <article class="proyecto" aria-labelledby="closet-titulo">
+          <h3 id="closet-titulo">Remodelación de closet</h3>
+          <div class="proyecto-imagen">
+            <img src="img/RemodelacionCloset.jpg"
+                 alt="Closet de diseño minimalista con espacio optimizado y acabados en madera"
+                 width="100%" height="auto">
+          </div>
+          <p>Le dimos un toque único al espacio con muebles diseñados para maximizar la comodidad y funcionalidad.</p>
+        </article>
+        <article class="proyecto" aria-labelledby="consultorio-titulo">
+          <h3 id="consultorio-titulo">Remodelación de consultorio</h3>
+          <div class="proyecto-imagen">
+            <img src="img/RemodelacionConsultorio.jpg"
+                 alt="Consultorio médico moderno con acabados limpios y equipamiento de vanguardia"
+                 width="100%" height="auto">
+          </div>
+          <p>Consultorio entregado en el vanguardista Hospital de Santiago.</p>
+        </article>
+      </div>
+
+      <div class="tabla-container">
+        <h3 tabindex="-1">Registro de Proyectos</h3>
+        <table id="tabla-proyectos" aria-label="Tabla de registro de proyectos completados">
+          <caption>Proyectos completados en los últimos 5 años</caption>
+          <thead>
+            <tr>
+              <th scope="col">Nombre del Proyecto</th>
+              <th scope="col">Ubicación</th>
+              <th scope="col">Año</th>
+              <th scope="col">Tipo</th>
+              <th scope="col">Área (m²)</th>
+            </tr>
+          </thead>
+          <tbody>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section id="seccion-cita"
+             class="seccion-contenido"
+             aria-labelledby="titulo-cita"
+             aria-hidden="true">
+      <h2 id="titulo-cita" tabindex="-1">Agendar una Cita</h2>
+      <p>Complete el siguiente formulario para programar una consulta con nuestro equipo de arquitectos.</p>
+      <form id="formulario-cita"
+            role="form"
+            aria-describedby="form-descripcion">
+        <p id="form-descripcion" class="visually-hidden">
+          Formulario para solicitar una cita con los arquitectos de Ploceus26. Todos los campos son obligatorios.
+        </p>
+        <div class="campo-formulario">
+          <label for="nombre">Nombre completo:</label>
+          <input type="text"
+                 id="nombre"
+                 name="nombre"
+                 required
+                 aria-required="true"
+                 aria-invalid="false"
+                 placeholder="Ingrese su nombre completo">
+        </div>
+        <div class="campo-formulario">
+          <label for="correo">Correo electrónico:</label>
+          <input type="email"
+                 id="correo"
+                 name="correo"
+                 required
+                 aria-required="true"
+                 aria-invalid="false"
+                 placeholder="correo@ejemplo.com">
+        </div>
+        <div class="campo-formulario">
+          <label for="telefono">Número de teléfono:</label>
+          <input type="tel"
+                 id="telefono"
+                 name="telefono"
+                 required
+                 aria-required="true"
+                 aria-invalid="false"
+                 placeholder="(123) 456-7890">
+        </div>
+        <div class="campo-formulario">
+          <button type="submit" id="btn-enviar">Enviar Solicitud</button>
+        </div>
+        <div id="form-status" role="status" aria-live="polite" class="visually-hidden"></div>
+      </form>
+    </section>
+  </main>
+
+  <div id="modal-confirmacion"
+       class="modal"
+       role="dialog"
+       aria-modal="true"
+       hidden>
+    <div class="modal-contenido">
+      <h2 id="modal-titulo">Registro Completado</h2>
+      <p>Gracias por contactarnos. Próximamente nos comunicaremos con usted.</p>
+      <button id="btn-cerrar-modal">Cerrar</button>
+    </div>
+  </div>
+
+  <footer role="contentinfo">
+    <div class="footer-minimalista">
+      <div class="footer-info">
+        <p class="footer-nombre" id="footer-brand">Ploceus26 Arquitectura</p>
+        <address aria-label="Dirección y contacto de Ploceus26">
+          Avenida Tecnólogico, No. 100, Torre NIPPO DESP. 410 PISO 4 COL. CENTRO, CP 76190, QUERÉTARO |
+          Tel: <a href="tel:+524424223284" aria-label="Llamar al teléfono de Ploceus26">442 422 3284</a> |
+          <a href="mailto:ploceus26@gmail.com" aria-label="Enviar correo a Ploceus26">ploceus26@gmail.com</a>
+        </address>
+      </div>
+      <div class="redes-sociales" aria-labelledby="redes-titulo">
+        <span id="redes-titulo" class="visually-hidden">Síguenos en redes sociales</span>
+        <ul class="lista-redes">
+          <li>
+            <a href="https://www.instagram.com/ploceus26" target="_blank" rel="noopener"
+               aria-label="Visitar perfil de Instagram de Ploceus26">Instagram</a>
+          </li>
+          <li>
+            <a href="https://www.facebook.com/ploceus26/" target="_blank" rel="noopener"
+               aria-label="Visitar página de Facebook de Ploceus26">Facebook</a>
+          </li>
+        </ul>
+      </div>
+      <div class="copyright">
+        <p>&copy; 2025 Ploceus26. Todos los derechos reservados.</p>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
