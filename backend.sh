@@ -1,0 +1,1 @@
+docker login && docker run -it --rm -v "/Users/mfsalinasz/Documents/escuela/Semestre 5/Desarrollo Web/17289":/app -v /Users/mfsalinasz/.m2:/root/.m2 -p 8080:8080 --env MYSQL_HOST=127.17.0.2 spring-boot
